@@ -21,4 +21,7 @@ $(Document).ready(function() {
         followingElement.innerText = json.following;
         linkElement.href = json.html_url;
     })
+    .catch(function(erro) {
+        alert(erro)
+    })
 })
